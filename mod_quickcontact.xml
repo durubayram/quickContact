@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type = "module" version = "3.0" client="site" method ="upgrade">
+    <name>Quick Contact</name>
+    <author>DuruB</author>
+    <version>0.0.1</version>
+    <description>Quick Contact Module</description>
+    <files>
+        <filename>mod_quickcontact.xml</filename>
+        <filename module ="mod_quickcontact">mod_quickcontact.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/form_success.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name ="advanced">
+                <field name="moduleclass_sfx" type="text" label="Module Class Suffix"
+                       description="Please enter Module class suffix"
+                />
+            </fieldset>
+            <fieldset name="basic">
+                <field name="pretext" type="textarea" label="Pre Text"
+                       description="Text to show before module"
+                       cols="30" rows="5"
+                />
+                <field name="posttext" type="textarea" label="Post Text"
+                       description="Text to show after module"
+                       cols="30" rows="5"
+                />
+
+            </fieldset>
+
+        </fields>
+    </config>
+</extension>
