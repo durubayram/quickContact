@@ -16,7 +16,7 @@ class modQouickContactHelper
 
 
         $mailer = & JFactory::getMailer();
-        $mailer->setSender('durubayram1343@gmail.com');
+        $mailer->setSender('durub@blabla.com');
         $mailer->addRecipient('durub@durub.db');
         $mailer->setSubject('Mail from Quick Contact Form');
         $mailer->setBody($message);
